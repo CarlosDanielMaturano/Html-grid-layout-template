@@ -1,0 +1,70 @@
+@import url("./reset.css");
+@import url("./grid.css");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+
+:root {
+    --image-background-color: rgba(10, 9, 9, 0.4);
+    --body-background-color: #a79770;
+    --body-secondary-background-color: #e0e5eb;
+    --text-color: #ffffff;
+    --secondary-text-color: #111111;
+    --foooter-background-color: #333333;
+
+    --main-font: "Playfair Display", serif;
+}
+
+body {
+    background: linear-gradient(
+        to bottom,
+        var(--body-background-color) 50%,
+        var(--body-secondary-background-color) 50%
+    );
+    font-family: var(--main-font);
+}
+
+header {
+    text-align: center;
+    padding: 7em 0;
+}
+
+.main-title {
+    font-size: 7rem;
+    color: var(--text-color);
+}
+
+.text {
+    width: 100%;
+    padding: 2.5em 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 2rem;
+    line-height: 1.8;
+    color: var(--secondary-text-color);
+}
+
+.text a {
+    color: var(--seconday-text-color);
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    font-size: 1.5rem;
+    line-height: 1.8;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--foooter-background-color);
+    padding: 3em 0;
+}
+
+footer,
+footer a {
+    color: var(--text-color);
+}
+
+@media screen and (max-width: 580px) {
+    footer {
+        font-size: 0.9rem;
+    }
+}
